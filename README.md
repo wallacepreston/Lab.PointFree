@@ -54,7 +54,7 @@ getShortNames1 = map (shorten . toName) -- point-free
 getShortNames2 names = map (\name -> shorten (toName name)) names -- point-ful
 ```
 
-That being said, it is easy to go overboard. To do FP well does _not_ mean to write everything in point-free style; point-free is just one tool that can, judiciously applied, clean up _some_ expressions. This exercise enforces writing everything in point-free style only as a form of practice, not as a model to follow. When in doubt, follow Amar Shah's Rules:
+That being said, it is easy to go overboard. To do FP well does _not_ mean to write everything in point-free style; point-free is just one tool that can, judiciously applied, clean up _some_ expressions. This exercise enforces writing everything in point-free style only as a form of practice, not as a model to follow. When in doubt, follow [Amar Shah's Rules](https://www.youtube.com/watch?v=seVSlKazsNk):
 
 #### Amar Shah's Rules
 
@@ -64,4 +64,3 @@ That being said, it is easy to go overboard. To do FP well does _not_ mean to wr
 ## Notes & Resources
 
 - Partly inspired by [Thinking in Ramda](http://randycoulman.com/blog/2016/05/31/thinking-in-ramda-combining-functions/) by Randy Coulman
-- YouTube: [Point-Free or Die](https://www.youtube.com/watch?v=seVSlKazsNk) by Amar Shah
