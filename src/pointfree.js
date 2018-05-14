@@ -11,7 +11,7 @@ const {
     map, // map(toLower, ['HEY', 'YO']) -> ['hey', 'yo']
     append, // append('-free', 'point') === 'point-free'
     filter, // filter(isEven, [2, 5, 8, 10, 1]) -> [2, 8, 10]
-    reduce, // reduce(add, ['point-', 'free']) === 'point-free'
+    reduce, // reduce(add, '', ['point-', 'free']) === 'point-free'
     length, // length(['currying', 'is', 'cool']) === 3
     take, // take(5, 'hello world') === 'hello'
     equals, // equals(1, 1) === true,
