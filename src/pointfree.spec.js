@@ -27,7 +27,7 @@ const {
     isAtLeast25,
     ageIsAtLeast25,
     isLicensed,
-    canRentCarWithoutSurchage,
+    canRentCarWithoutSurcharge,
     getTwoEligibleRenterNames,
 } = require('./pointfree')
 
@@ -201,12 +201,12 @@ describe('Point-free', () => {
         })
     })
 
-    describe('`canRentCarWithoutSurchage`', () => {
+    describe('`canRentCarWithoutSurcharge`', () => {
         it('returns true for licensed people who are 25 or older', () => {
-            expect(canRentCarWithoutSurchage(TEMPLATE)).to.be.false
-            expect(canRentCarWithoutSurchage(Mark)).to.be.false
-            expect(canRentCarWithoutSurchage(Hans)).to.be.false
-            expect(canRentCarWithoutSurchage(Aiko)).to.be.true
+            expect(canRentCarWithoutSurcharge(TEMPLATE)).to.be.false
+            expect(canRentCarWithoutSurcharge(Mark)).to.be.false
+            expect(canRentCarWithoutSurcharge(Hans)).to.be.false
+            expect(canRentCarWithoutSurcharge(Aiko)).to.be.true
         })
     })
 

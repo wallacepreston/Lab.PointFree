@@ -11,11 +11,11 @@ const {
     map, // map(toLower, ['HEY', 'YO']) -> ['hey', 'yo']
     append, // append('-free', 'point') === 'point-free'
     filter, // filter(isEven, [2, 5, 8, 10, 1]) -> [2, 8, 10]
-    reduce, // reduce(add, '', ['point-', 'free']) === 'point-free'
+    reduce, // reduce(add, 'start-', ['point-', 'free']) === 'start-point-free'
     length, // length(['currying', 'is', 'cool']) === 3
     take, // take(5, 'hello world') === 'hello'
     equals, // equals(1, 1) === true,
-    isGreaterThan, // isGt(5, 4) === true
+    isGreaterThan, // isGreaterThan(3, 5) === true
     and, // and(true, false) === false,
     not, // not(true) === false
     both, // both(isEven, is2, 2) === true
@@ -25,9 +25,9 @@ const {
 
 /**
  * Functions you must derive. Note that for this exercise, you may only create
- * functions by partially applying existing functions and / or composing
+ * functions by partially applying existing functions and/or composing
  * existing functions together. For composition, you may use Ramda's `compose`
- * or `pipe`, already imported for you in this module. Again, do NOT define
+ * and/or `pipe`, already imported for you in this module. Again, do NOT define
  * new functions from scratch (using `function` or arrows or "cheats" like
  * `eval`) – you may only "remix" starting functions and ones you derive.
  */
@@ -44,7 +44,7 @@ const negate = undefined
 // negateThenInc :: Number -> Number
 const negateThenInc = undefined
 
-// doubleAndDec :: Number -> Number
+// doubleThenDec :: Number -> Number
 const doubleThenDec = undefined
 
 // circleArea :: Number -> Number
@@ -84,13 +84,13 @@ const isAtLeast25 = undefined
 // ageIsAtLeast25 :: Object -> Boolean
 const ageIsAtLeast25 = undefined
 
-// hasLicense :: Object -> Boolean
+// isLicensed :: Object -> Boolean
 const isLicensed = undefined
 
 // canRentCarWithoutSurcharge :: Object -> Boolean
-const canRentCarWithoutSurchage = undefined
+const canRentCarWithoutSurcharge = undefined
 
-// getEligibleRenters :: [Object] -> [String]
+// getTwoEligibleRenterNames :: [Object] -> [String]
 const getTwoEligibleRenterNames = undefined
 
 module.exports = {
@@ -112,6 +112,6 @@ module.exports = {
     isAtLeast25,
     ageIsAtLeast25,
     isLicensed,
-    canRentCarWithoutSurchage,
+    canRentCarWithoutSurcharge,
     getTwoEligibleRenterNames,
 }
