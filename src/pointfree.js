@@ -95,11 +95,11 @@ const getTwoEligibleRenterNames = undefined
 
 module.exports = {
     inc,
+    ask,
     negate,
     negateThenInc,
     doubleThenDec,
     circleArea,
-    ask,
     incAll,
     incThenNegateAll,
     takeTwoDoubles,
