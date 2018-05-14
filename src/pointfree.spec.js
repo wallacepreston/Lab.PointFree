@@ -56,6 +56,13 @@ describe('Point-free', () => {
         })
     })
 
+    describe('`ask`', () => {
+        it('tacks on a question mark', () => {
+            expect(ask('who')).to.equal('who?')
+            expect(ask('where')).to.equal('where?')
+        })
+    })
+
     describe('`negate`', () => {
         it('negates a number', () => {
             expect(negate(4)).to.equal(-4)
@@ -85,13 +92,6 @@ describe('Point-free', () => {
             expect(circleArea(0)).to.equal(0)
             expect(circleArea(1)).to.equal(Math.PI)
             expect(circleArea(3)).to.equal(9 * Math.PI)
-        })
-    })
-
-    describe('`ask`', () => {
-        it('tacks on a question mark', () => {
-            expect(ask('who')).to.equal('who?')
-            expect(ask('where')).to.equal('where?')
         })
     })
 
