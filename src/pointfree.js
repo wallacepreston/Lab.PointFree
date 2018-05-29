@@ -9,7 +9,6 @@ const {
     add, // add(1, 2) === 3
     multiply, // multiply(1, 2) === 2
     map, // map(toLower, ['HEY', 'YO']) -> ['hey', 'yo']
-    append, // append('-free', 'point') === 'point-free'
     filter, // filter(isEven, [2, 5, 8, 10, 1]) -> [2, 8, 10]
     reduce, // reduce(add, 'start-', ['point-', 'free']) === 'start-point-free'
     length, // length(['currying', 'is', 'cool']) === 3
@@ -34,9 +33,6 @@ const {
 
 // inc :: Number -> Number
 const inc = undefined
-
-// ask :: String -> String
-const ask = undefined
 
 // negate :: Number -> Number
 const negate = undefined
@@ -95,7 +91,6 @@ const getTwoEligibleRenterNames = undefined
 
 module.exports = {
     inc,
-    ask,
     negate,
     negateThenInc,
     doubleThenDec,

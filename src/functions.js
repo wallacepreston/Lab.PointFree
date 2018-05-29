@@ -1,6 +1,6 @@
 'use strict'
 
-const { curry, flip } = require('ramda')
+const { curry } = require('ramda')
 
 /**
  * Pre-defined functions you are allowed to use. These have all already been
@@ -17,9 +17,6 @@ const square = x => x ** 2
 // :: Number -> Number -> Number
 const add = curry((a, b) => a + b)
 const multiply = curry((a, b) => a * b)
-
-// :: String -> String -> String
-const append = flip(add) // append('-free', 'point') === 'point-free'
 
 // :: Function -> Array -> Array
 const map = curry((mapper, arr) => arr.map(mapper))
@@ -55,7 +52,6 @@ module.exports = {
     square,
     add,
     multiply,
-    append,
     map,
     filter,
     reduce,

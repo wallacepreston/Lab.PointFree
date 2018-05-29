@@ -14,7 +14,6 @@ const {
     negateThenInc,
     doubleThenDec,
     circleArea,
-    ask,
     incAll,
     incThenNegateAll,
     takeTwoDoubles,
@@ -53,13 +52,6 @@ describe('Point-free', () => {
             expect(inc(4)).to.equal(5)
             expect(inc(0)).to.equal(1)
             expect(inc(7)).to.equal(8)
-        })
-    })
-
-    describe('`ask`', () => {
-        it('tacks on a question mark', () => {
-            expect(ask('who')).to.equal('who?')
-            expect(ask('where')).to.equal('where?')
         })
     })
 
