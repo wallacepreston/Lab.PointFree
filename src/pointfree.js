@@ -44,7 +44,7 @@ const negateThenInc = undefined
 const doubleThenDec = undefined
 
 // circleArea :: Number -> Number
-// (Remember, circle area = pi * radius^2)
+// (Remember, circle area = radius^2 * pi)
 const circleArea = undefined
 
 // incAll :: [Number] -> [Number]
