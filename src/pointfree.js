@@ -66,8 +66,8 @@ const sum = undefined
 // product :: [Number] -> Number
 const product = undefined
 
-// all :: [Boolean] -> Boolean
-const all = undefined
+// allTrue :: [Boolean] -> Boolean
+const allTrue = undefined
 
 // isSpace :: String -> Boolean
 const isSpace = undefined
@@ -105,7 +105,7 @@ module.exports = {
     takeTwoDoubles,
     sum,
     product,
-    all,
+    allTrue,
     isSpace,
     howManyPoints,
     rejectPoints,

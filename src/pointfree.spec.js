@@ -20,7 +20,7 @@ const {
     takeTwoDoubles,
     sum,
     product,
-    all,
+    allTrue,
     isSpace,
     howManyPoints,
     rejectPoints,
@@ -130,11 +130,11 @@ describe('Point-free', () => {
         })
     })
 
-    describe('`all`', () => {
+    describe('`allTrue`', () => {
         it('returns true if everything in the list is true', () => {
-            expect(all([false, true])).to.be.false
-            expect(all([true])).to.be.true
-            expect(all([true, true, true])).to.be.true
+            expect(allTrue([false, true])).to.be.false
+            expect(allTrue([true])).to.be.true
+            expect(allTrue([true, true, true])).to.be.true
         })
     })
 
