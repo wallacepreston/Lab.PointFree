@@ -45,13 +45,13 @@ _Sometimes_, point-free style is cleaner, with fewer nested expressions and no n
 ```js
 // JavaScript
 const getShortNames1 = map(compose(shorten, toName)) // point-free
-const getShortNames2 = names => names.map(name => shorten(toName(name))) // point-ful
+const getShortNames2 = people => people.map(person => shorten(toName(person))) // point-ful
 ```
 
 ```hs
 -- Haskell
 getShortNames1 = map (shorten . toName) -- point-free
-getShortNames2 names = map (\name -> shorten (toName name)) names -- point-ful
+getShortNames2 people = map (\person -> shorten (toName person)) people -- point-ful
 ```
 
 That being said, it is easy to go overboard. To do FP well does _not_ mean to write everything in point-free style; point-free is just one tool that can, judiciously applied, clean up _some_ expressions. This exercise enforces writing everything in point-free style only as a form of practice, not as a model to follow. When in doubt, follow [Amar Shah's Rules](https://www.youtube.com/watch?v=seVSlKazsNk):
