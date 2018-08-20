@@ -165,6 +165,7 @@ describe('Point-free', () => {
     describe('`isAtLeast25`', () => {
         it('returns true for numbers greater than or equal to 25', () => {
             expect(isAtLeast25(24)).to.be.false
+            expect(isAtLeast25(24 + Math.random())).to.be.false // 24.?????
             expect(isAtLeast25(25)).to.be.true
             expect(isAtLeast25(26)).to.be.true
         })
