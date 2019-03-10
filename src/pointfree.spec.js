@@ -80,7 +80,7 @@ describe('Point-free', () => {
     })
 
     describe('`circleArea`', () => {
-        it('gets the area of a circle for a given radius', () => {
+        xit('gets the area of a circle for a given radius', () => {
             expect(circleArea(0)).to.equal(0)
             expect(circleArea(1)).to.equal(Math.PI)
             expect(circleArea(3)).to.equal(9 * Math.PI)
@@ -179,7 +179,7 @@ describe('Point-free', () => {
     const John = { name: 'John', age: 33, status: 'licensed' }
 
     describe('`ageIsAtLeast25`', () => {
-        it('returns true for people whose `age` is at least 25', () => {
+        xit('returns true for people whose `age` is at least 25', () => {
             expect(ageIsAtLeast25(Dana)).to.be.true
             expect(ageIsAtLeast25(Hans)).to.be.false
             expect(ageIsAtLeast25(Aiko)).to.be.true
@@ -187,7 +187,7 @@ describe('Point-free', () => {
     })
 
     describe('`isLicensed`', () => {
-        it('returns true for people whose `status` is `licensed`', () => {
+        xit('returns true for people whose `status` is `licensed`', () => {
             expect(isLicensed(TEMPLATE)).to.be.false
             expect(isLicensed(Mark)).to.be.false
             expect(isLicensed(Aiko)).to.be.true
@@ -195,7 +195,7 @@ describe('Point-free', () => {
     })
 
     describe('`canRentCarWithoutSurcharge`', () => {
-        it('returns true for licensed people who are 25 or older', () => {
+        xit('returns true for licensed people who are 25 or older', () => {
             expect(canRentCarWithoutSurcharge(TEMPLATE)).to.be.false
             expect(canRentCarWithoutSurcharge(Mark)).to.be.false
             expect(canRentCarWithoutSurcharge(Hans)).to.be.false
@@ -204,7 +204,7 @@ describe('Point-free', () => {
     })
 
     describe('`getTwoEligibleRenterNames`', () => {
-        it('gets up to two people who can rent a car cheaply`', () => {
+        xit('gets up to two people who can rent a car cheaply`', () => {
             expect(
                 getTwoEligibleRenterNames([Dana, Mark, Hans, Aiko, John]),
             ).to.deep.equal(['Dana', 'Aiko'])

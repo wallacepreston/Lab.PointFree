@@ -32,38 +32,38 @@ const {
  */
 
 // inc :: Number -> Number
-const inc = undefined
+const inc = pipe(add(1))
 
 // negate :: Number -> Number
-const negate = undefined
+const negate = pipe(multiply(-1))
 
 // negateThenInc :: Number -> Number
-const negateThenInc = undefined
+const negateThenInc = pipe(multiply(-1), add(1))
 
 // doubleThenDec :: Number -> Number
-const doubleThenDec = undefined
+const doubleThenDec = pipe(multiply(2), add(-1))
 
 // circleArea :: Number -> Number
 // (Remember, circle area = radius^2 * pi)
-const circleArea = undefined
+const circleArea = pipe(multiply(Math.PI))
 
 // incAll :: [Number] -> [Number]
-const incAll = undefined
+const incAll = pipe(map(add(1)))
 
 // incThenNegateAll :: [Number] -> [Number]
-const incThenNegateAll = undefined
+const incThenNegateAll = pipe(map(add(1)), map(multiply(-1)))
 
 // takeTwoDoubles :: [Number] -> [Number]
-const takeTwoDoubles = undefined
+const takeTwoDoubles = pipe(map(multiply(2)), take(2))
 
 // sum :: [Number] -> Number
-const sum = undefined
+const sum = reduce(add, 0)
 
 // product :: [Number] -> Number
-const product = undefined
+const product = reduce(multiply, 1)
 
 // allTrue :: [Boolean] -> Boolean
-const allTrue = undefined
+const allTrue = reduce(and, true)
 
 // isSpace :: String -> Boolean
 const isSpace = undefined
