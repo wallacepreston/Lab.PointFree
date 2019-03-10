@@ -45,7 +45,7 @@ const doubleThenDec = pipe(multiply(2), add(-1))
 
 // circleArea :: Number -> Number
 // (Remember, circle area = radius^2 * pi)
-const circleArea = pipe(multiply(Math.PI))
+const circleArea = pipe(square, multiply(Math.PI))
 
 // incAll :: [Number] -> [Number]
 const incAll = pipe(map(add(1)))
@@ -66,19 +66,22 @@ const product = reduce(multiply, 1)
 const allTrue = reduce(and, true)
 
 // isSpace :: String -> Boolean
-const isSpace = undefined
+const isSpace = equals(' ')
 
 // howManyPoints :: [String] -> Number
-const howManyPoints = undefined
+const howManyPoints = compose(length, filter(equals('point')))
 
 // rejectPoints :: [String] -> [String]
-const rejectPoints = undefined
+const rejectPoints = filter(pipe(equals('point'), not))
 
 // isAtLeast25 :: Number -> Boolean
-const isAtLeast25 = undefined
+const isAtLeast25 = compose(either(isGreaterThan(25), equals(25)))
 
 // ageIsAtLeast25 :: Object -> Boolean
-const ageIsAtLeast25 = undefined
+const ageIsAtLeast25 = compose(
+    either(isGreaterThan(25), equals(25)),
+    prop('age'),
+)
 
 // isLicensed :: Object -> Boolean
 const isLicensed = undefined
