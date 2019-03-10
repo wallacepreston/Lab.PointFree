@@ -84,13 +84,17 @@ const ageIsAtLeast25 = compose(
 )
 
 // isLicensed :: Object -> Boolean
-const isLicensed = undefined
+const isLicensed = pipe(prop('status'), equals('licensed'))
 
 // canRentCarWithoutSurcharge :: Object -> Boolean
-const canRentCarWithoutSurcharge = undefined
+const canRentCarWithoutSurcharge = both(ageIsAtLeast25, isLicensed)
 
 // getTwoEligibleRenterNames :: [Object] -> [String]
-const getTwoEligibleRenterNames = undefined
+const getTwoEligibleRenterNames = pipe(
+    filter(canRentCarWithoutSurcharge),
+    take(2),
+    map(prop('name')),
+)
 
 module.exports = {
     inc,
